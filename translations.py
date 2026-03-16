@@ -249,9 +249,7 @@ TRANSLATIONS = {
         "error": "\u30a8\u30e9\u30fc",
         "success": "\u6210\u529f",
     },
-}
 
-# Default language
     "Português": {
         "title": "madOS Visualizador de Fotos",
         "open_file": "Abrir Arquivo...",
@@ -389,6 +387,7 @@ TRANSLATIONS = {
         "cancel": "취소",
         "close": "닫기",
     },
+}
 
 DEFAULT_LANGUAGE = "English"
 
