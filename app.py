@@ -24,9 +24,9 @@ gi.require_version("Gdk", "3.0")
 gi.require_version("GdkPixbuf", "2.0")
 from gi.repository import Gtk, Gdk, GdkPixbuf, GLib
 
-from . import __app_id__, __app_name__, __version__
-from .canvas import ImageCanvas
-from .tools import (
+from __init__ import __app_id__, __app_name__, __version__
+from canvas import ImageCanvas
+from tools import (
     TOOL_NONE,
     TOOL_PAINT,
     TOOL_TEXT,
@@ -35,7 +35,7 @@ from .tools import (
     TOOL_ERASER,
     compose_edits_onto_pixbuf,
 )
-from .navigator import (
+from navigator import (
     FileNavigator,
     is_image_file,
     is_video_file,
@@ -43,9 +43,9 @@ from .navigator import (
     VIDEO_EXTENSIONS,
     ALL_EXTENSIONS,
 )
-from .video_player import VideoPlayer, GST_AVAILABLE
-from .translations import get_text, detect_system_language, DEFAULT_LANGUAGE
-from .theme import apply_theme, NORD
+from video_player import VideoPlayer, GST_AVAILABLE
+from translations import get_text, detect_system_language, DEFAULT_LANGUAGE
+from theme import apply_theme, NORD
 
 
 class PhotoViewerApp(Gtk.Window):

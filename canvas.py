@@ -25,7 +25,7 @@ gi.require_version("Gdk", "3.0")
 gi.require_version("GdkPixbuf", "2.0")
 from gi.repository import Gtk, Gdk, GdkPixbuf, GLib
 
-from .tools import (
+from tools import (
     TOOL_NONE,
     TOOL_PAINT,
     TOOL_TEXT,
